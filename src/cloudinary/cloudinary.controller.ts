@@ -2,6 +2,7 @@ import { Controller, FileTypeValidator, MaxFileSizeValidator, Param, ParseFilePi
 import { CloudinaryService } from "./cloudinary.service";
 import { FileInterceptor } from "@nestjs/platform-express";
 import { AuthGuard } from "src/auth/AuthGuard";
+import { Multer } from 'multer';
 
 @Controller()
 export class CloudinaryController {
